@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CoverFragment"
+    android:id="@+id/fragment_cover">
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="415dp"
+        android:layout_height="346dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now playing"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_status"
+        app:layout_constraintEnd_toEndOf="@id/iv_cover"
+        app:layout_constraintStart_toStartOf="@id/iv_cover"
+        app:layout_constraintTop_toTopOf="@id/iv_cover" />
+
+
+    <TextView
+        android:id="@+id/tv_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Talk Me Down"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="italic"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cover"
+        app:layout_constraintStart_toStartOf="@id/iv_cover" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:text="Blue Neighbourhood"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/tv_title"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/tv_album"
+        app:layout_constraintTop_toBottomOf="@id/tv_album"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
